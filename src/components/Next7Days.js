@@ -9,9 +9,8 @@ const Next7Days = (props) => {
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
     if (diffDays < 8) {
       return true;
-    } else {
-      return false;
     }
+    return false;
   });
 
   return (

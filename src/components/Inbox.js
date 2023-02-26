@@ -28,6 +28,7 @@ const Inbox = (props) => {
   const cancelHandler = (e) => {
     setNewTask(false);
   };
+
   return (
     <div>
       <h3>Inbox</h3>
@@ -58,7 +59,7 @@ const Inbox = (props) => {
       <div id="inbox">
         {props.list.map((list) => {
           return (
-            <div className="box">
+            <div className="box" key={list.number}>
               <div className="task">
                 {list.title} ({list.date.toLocaleDateString()})
               </div>

@@ -3,7 +3,6 @@ import ListRender from "./ListRender";
 
 const Today = (props) => {
   const date = new Date();
-
   const filteredList = props.list.filter((task) => {
     if (date.getFullYear() !== task.date.getFullYear()) {
       return false;
